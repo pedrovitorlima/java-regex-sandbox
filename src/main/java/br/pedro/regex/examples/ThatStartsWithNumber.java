@@ -8,8 +8,8 @@ public class ThatStartsWithNumber {
 
 	public static void main(String[] args) {
 		final String text = "100 will be catched";
-		final String regexNumberStart = "([0-9]*)";
-		final String regexNoNumberPhrase = "([0-9]*)(.*)";
+		final String regexNumberStart = "^([0-9]+)";
+		final String regexNoNumberPhrase = "([0-9]+)(.*)";
 		
 		final Matcher matcherInitialNumberOfPhrase = search(regexNumberStart, text);
 		final Matcher matcherPhraseThatStartsWithNumber = search(regexNoNumberPhrase, text);
